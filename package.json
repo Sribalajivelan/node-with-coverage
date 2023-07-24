@@ -8,17 +8,17 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "jest" :  {
-    "testEnvironment" :   "node" ,
-    "coveragePathIgnorePatterns" :  [
+  "jest": {
+    "testEnvironment":  "node",
+    "coveragePathIgnorePatterns": [
       "/node_modules/"
-    ] ,
-    "testResultsProcessor" :   "jest-sonar-reporter"
-  } ,
-  "jestSonar" :  {
-    "reportPath" :   "coverage" ,
-    "reportFile" :  "test-reporter.xml" ,
-    "indent" :   4
+    ],
+    "testResultsProcessor":  "jest-sonar-reporter"
+  },
+  "jestSonar": {
+    "reportPath":  "coverage",
+    "reportFile":  "test-reporter.xml",
+    "indent":  4
   },
   "keywords": [],
   "author": "",
@@ -31,7 +31,9 @@
   },
   "devDependencies": {
     "jest": "^29.6.1",
+    "jest-sonar-reporter": "^2.0.0",
     "nodemon": "^3.0.1",
+    "sonarqube-scanner": "^3.0.1",
     "supertest": "^6.3.3"
   }
 }
