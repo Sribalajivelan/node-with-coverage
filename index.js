@@ -1,4 +1,5 @@
 const express = require('express');
+const config = require('./config');
 const itemController = require("./controller/itemController");
 require("./dbConfig");
 
@@ -9,7 +10,7 @@ app.use(express.json());
 app.use(itemController);
 
 // Start the server
-const port = 3000;
+const port = config.PORT | 3000;
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });

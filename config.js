@@ -1,10 +1,9 @@
 require('dotenv').config()
 const data = {
     PORT: process.env.PORT,
-    DB: process.env.DB,
-    JWT_SECRET: process.env.JWT_SECRET,
-    JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN,
-    JWT_SECRETREF: process.env.JWT_SECRETREF,
-    JWT_EXPIRESREF_IN: process.env.JWT_EXPIRESREF_IN
+    DB_NAME: process.env.DB_NAME,
+    DB_HOST: process.env.DB_HOST,
+    DB_USERNAME: process.env.DB_USERNAME,
+    DB_PASSWORD: process.env.DB_PASSWORD,
 }
 module.exports = data
