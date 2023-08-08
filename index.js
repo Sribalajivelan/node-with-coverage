@@ -9,6 +9,7 @@ app.use(express.json());
 
 app.use(itemController);
 
+console.log("config === ", config)
 // Start the server
 const port = config.PORT | 3000;
 app.listen(port, () => {
